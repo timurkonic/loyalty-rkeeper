@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  server:
+    build: ./
+    environment:
+      - DBHOST
+      - DBNAME
+      - DBUSER
+      - DBPASS
+      - APIKEY
+      - PORT
+      - LOGLEVEL
+      - LOGPATH
+    network_mode: "host"
+    volumes:
+      - /home/docker/loyalty-rkeeper-logs/:/logs

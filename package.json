@@ -1,0 +1,17 @@
+{
+    "name": "loyalty-rkeeper",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "GRINN Loyalty RKeeper API",
+    "author": "Timur Konic <timur.konic@gmail.com>",
+    "license": "MIT",
+    "main": "app.js",
+    "keywords": [
+      "rkeeper"
+    ],
+    "dependencies": {
+      "express": "^4.18.1",
+      "body-parser": "^1.20.0",
+      "winston": "^3.7.2"
+    }
+}
