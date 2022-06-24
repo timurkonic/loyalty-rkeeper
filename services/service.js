@@ -1,5 +1,6 @@
 import axios from 'axios';
 import currency from 'currency.js';
+import logger from '../logger/logger.js';
 
 const Axios = axios.create({
     baseURL: process.env.LOYALTY_API,
@@ -31,6 +32,7 @@ class Service {
             chek_sn: 0
         });
         const result = response.data;
+        logger.info({f: 'postTransaction', account_id: account_id, amount: amount, result: result});
         return {
             userdata: {
                 user_id: account_id,
